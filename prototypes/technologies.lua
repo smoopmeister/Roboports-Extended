@@ -33,7 +33,7 @@ data:extend
   {
     type = "technology",
     name = "advanced-robotics",
-    icon = "__base__/graphics/technology/logistic-robotics.png",
+    icon = "__base__/graphics/technology/construction-robotics.png",
     effects =
     {
       {
@@ -41,7 +41,7 @@ data:extend
         recipe = "roboport-mk3-logistic"
       },
     },
-	prerequisites = { "construction-robotics", "logistic-robotics", "expanded-robotics" },
+	prerequisites = { "expanded-robotics" },
     unit =
     {
       count = 400,
@@ -65,10 +65,6 @@ data:extend
     {
       {
         type = "unlock-recipe",
-        recipe = "roboport-mk3"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "roboport-mk3-logistic"
       },
       {
@@ -80,7 +76,39 @@ data:extend
         recipe = "roboport-mk3-reinforced"
       },
     },
-	prerequisites = { "construction-robotics", "logistic-robotics", "advanced robotics" },
+	prerequisites = { "advanced-robotics" },
+    unit =
+    {
+      count = 350,
+      ingredients =
+      {
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+	     	{"science-pack-3", 1},
+	     	{"production-science-pack", 1}
+      },
+      time = 30
+    },
+    order = "c-k-d",
+  },
+
+
+  {
+    type = "technology",
+    name = "robotic-components-miniaturization",
+    icon = "__base__/graphics/entity/roboport/logistic-robotics.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "construction-drone"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "logistic-drone"
+      },
+    },
+	prerequisites = { "construction-robotics", "logistic-robotics", "advanced-robotics" },
     unit =
     {
       count = 350,
