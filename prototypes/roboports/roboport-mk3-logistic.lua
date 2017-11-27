@@ -5,10 +5,10 @@ data:extend
   
   {
     type = "roboport",
-    name = "roboport-mk3",
+    name = "roboport-mk3-logistic",
     icon = "__base__/graphics/icons/roboport.png",
     flags = {"placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "roboport-mk2"},
+    minable = {hardness = 0.2, mining_time = 0.5, result = "roboport-mk3-logistic"},
     max_health = 750,
     corpse = "big-remnants",
     collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
@@ -33,14 +33,14 @@ data:extend
       buffer_capacity = "300MJ"
     },
     recharge_minimum = "75MJ",
-    energy_usage = "125kW",
+    energy_usage = "150kW",
     -- per one charge slot
     charging_energy = "1500kW",
-    logistics_radius = 75,
-    construction_radius = 150,
+    logistics_radius = 100,
+    construction_radius = 75,
     charge_approach_distance = 5,
     robot_slots_count = 12,
-    material_slots_count = 12,
+    material_slots_count = 2,
     stationing_offset = {0, 0},
     charging_offsets =
     {
