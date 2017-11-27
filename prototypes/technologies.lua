@@ -41,7 +41,7 @@ data:extend
         recipe = "roboport-mk3"
       },
     },
-	prerequisites = { "construction-robotics", "logistic-robotics" },
+	prerequisites = { "construction-robotics", "logistic-robotics", "expanded-robotics" },
     unit =
     {
       count = 350,
