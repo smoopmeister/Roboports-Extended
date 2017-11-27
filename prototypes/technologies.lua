@@ -6,7 +6,7 @@ data:extend
  {
     type = "technology",
     name = "expanded-robotics",
-    icon = "__base__/graphics/technology/logistic-robotics.png",
+    icon = "__base__/graphics/technology/robotics.png",
     effects =
     {
       {
@@ -38,10 +38,37 @@ data:extend
     {
       {
         type = "unlock-recipe",
+        recipe = "roboport-mk3-logistic"
+      },
+    },
+	prerequisites = { "construction-robotics", "logistic-robotics", "expanded-robotics" },
+    unit =
+    {
+      count = 400,
+      ingredients =
+      {
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+	     	{"science-pack-3", 1},
+	     	{"production-science-pack", 1}
+      },
+      time = 30
+    },
+    order = "c-k-d",
+  },
+
+  {
+    type = "technology",
+    name = "special-purpose-roboports",
+    icon = "__base__/graphics/entity/roboport/roboport-base.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
         recipe = "roboport-mk3"
       },
     },
-	prerequisites = { "construction-robotics", "logistic-robotics" },
+	prerequisites = { "construction-robotics", "logistic-robotics", "advanced robotics" },
     unit =
     {
       count = 350,
