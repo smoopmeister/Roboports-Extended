@@ -31,6 +31,48 @@ data:extend
     energy_required = 10
   },
 
+  {
+    type = "recipe",
+    name = "roboport-mk3-reinforced",
+    enabled = false,
+    ingredients =
+    {
+      {"roboport-mk3", 1},
+	  {"electronic-circuit", 20},
+	  {"processing-unit", 10}
+    },
+    result = "roboport-mk3-reinforced",
+    energy_required = 10
+  },
+
+  {
+    type = "recipe",
+    name = "roboport-mk3-logistic",
+    enabled = false,
+    ingredients =
+    {
+      {"roboport-mk3", 1},
+	  {"electronic-circuit", 20},
+	  {"processing-unit", 10}
+    },
+    result = "roboport-mk3-logistic",
+    energy_required = 10
+  },
+
+  {
+    type = "recipe",
+    name = "roboport-mk3-construction",
+    enabled = false,
+    ingredients =
+    {
+      {"roboport-mk3", 1},
+	  {"electronic-circuit", 20},
+	  {"processing-unit", 10}
+    },
+    result = "roboport-mk3-construction",
+    energy_required = 10
+  },
+
 
 }
 )

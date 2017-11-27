@@ -5,11 +5,11 @@ data:extend
 
   {
     type = "roboport",
-    name = "roboport-mk3-reinforced",
+    name = "roboport-mk3-construction",
     icon = "__base__/graphics/icons/roboport.png",
     flags = {"placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "roboport-mk3-reinforced"},
-    max_health = 1250,
+    minable = {hardness = 0.2, mining_time = 0.5, result = "roboport-mk3-construction"},
+    max_health = 750,
     corpse = "big-remnants",
     collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
     selection_box = {{-2, -2}, {2, 2}},
@@ -17,11 +17,11 @@ data:extend
     {
       {
         type = "fire",
-        percent = 73
+        percent = 60
       },
       {
         type = "impact",
-        percent = 55
+        percent = 30
       }
     },
     dying_explosion = "medium-explosion",
@@ -36,15 +36,15 @@ data:extend
     energy_usage = "150kW",
     -- per one charge slot
     charging_energy = "1500kW",
-    logistics_radius = 75,
-    construction_radius = 150,
+    logistics_radius = 50,
+    construction_radius = 200,
     charge_approach_distance = 5,
-    robot_slots_count = 10,
-    material_slots_count = 12,
+    robot_slots_count = 12,
+    material_slots_count = 2,
     stationing_offset = {0, 0},
     charging_offsets =
     {
-      {-1.5, -0.5}, {1.5, -0.5}, {1.5, 1.5}, {-1.5, 1.5},
+      {-1.3, -0.5}, {1.3, -0.5}, {1.3, 1.5}, {-1.3, 1.5}, {-1.5, 0.5}, {1.5, 0.5},
     },
     base =
     {

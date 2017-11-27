@@ -1,8 +1,8 @@
 data:extend
 (
 {
- 
- 
+
+
  {
     type = "technology",
     name = "expanded-robotics",
@@ -66,6 +66,18 @@ data:extend
       {
         type = "unlock-recipe",
         recipe = "roboport-mk3"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "roboport-mk3-logistic"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "roboport-mk3-construction"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "roboport-mk3-reinforced"
       },
     },
 	prerequisites = { "construction-robotics", "logistic-robotics", "advanced robotics" },
