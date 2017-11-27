@@ -13,7 +13,7 @@ data:extend
     order = "c[signal]-b[roboport]2",
     place_result = "roboport-mk2",
     stack_size = 5
-  }
+  },
 
   {
 	--roboport-mk3
@@ -25,7 +25,7 @@ data:extend
     order = "c[signal]-b[roboport]3",
     place_result = "roboport-mk3",
     stack_size = 5
-  }
+  },
   
 
 }
