@@ -38,8 +38,8 @@ data:extend
     ingredients =
     {
       {"roboport-mk3", 1},
-	  {"electronic-circuit", 20},
-	  {"processing-unit", 10}
+	  {"steel-plate", 50},
+	  {"stone-brick", 100}
     },
     result = "roboport-mk3-reinforced",
     energy_required = 10
