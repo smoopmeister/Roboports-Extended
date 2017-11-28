@@ -4,9 +4,6 @@ require("prototypes.roboports.roboport-mk3")
 require("prototypes.roboports.roboport-mk3-logistic")
 require("prototypes.roboports.roboport-mk3-reinforced")
 require("prototypes.roboports.roboport-mk3-construction")
-require("prototypes.roboports.roboport-mk4")
-require("prototypes.roboports.roboport-mk4-charging")
-require("prototypes.roboports.roboport-mk4-repair-storage")
 
 --Other Prototypes
 require("prototypes.items")
