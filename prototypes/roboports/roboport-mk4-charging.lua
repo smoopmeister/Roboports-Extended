@@ -1,14 +1,14 @@
 data:extend
 (
 {
-
-
+  
+  
   {
     type = "roboport",
-    name = "roboport-mk3-construction",
+    name = "roboport-mk4",
     icon = "__base__/graphics/icons/roboport.png",
     flags = {"placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 1, result = "roboport-mk3-construction"},
+    minable = {hardness = 0.2, mining_time = 2, result = "roboport-mk4"},
     max_health = 750,
     corpse = "big-remnants",
     collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
@@ -29,18 +29,18 @@ data:extend
     {
       type = "electric",
       usage_priority = "secondary-input",
-      input_flow_limit = "20MW",
-      buffer_capacity = "300MJ"
+      input_flow_limit = "30MW",
+      buffer_capacity = "450MJ"
     },
-    recharge_minimum = "75MJ",
-    energy_usage = "150kW",
+    recharge_minimum = "100MJ",
+    energy_usage = "175kW",
     -- per one charge slot
     charging_energy = "1500kW",
-    logistics_radius = 50,
+    logistics_radius = 100,
     construction_radius = 200,
     charge_approach_distance = 5,
-    robot_slots_count = 12,
-    material_slots_count = 2,
+    robot_slots_count = 15,
+    material_slots_count = 15,
     stationing_offset = {0, 0},
     charging_offsets =
     {
@@ -149,7 +149,7 @@ data:extend
     default_available_construction_output_signal = {type = "virtual", name = "signal-Z"},
     default_total_construction_output_signal = {type = "virtual", name = "signal-T"},
   },
-
-
+  
+ 
 }
 )

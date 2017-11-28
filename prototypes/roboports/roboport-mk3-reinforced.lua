@@ -8,7 +8,7 @@ data:extend
     name = "roboport-mk3-reinforced",
     icon = "__base__/graphics/icons/roboport.png",
     flags = {"placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "roboport-mk3-reinforced"},
+    minable = {hardness = 0.2, mining_time = 1, result = "roboport-mk3-reinforced"},
     max_health = 1250,
     corpse = "big-remnants",
     collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
