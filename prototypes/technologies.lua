@@ -93,36 +93,5 @@ data:extend
   },
 
 
-  {
-    type = "technology",
-    name = "robotic-components-miniaturization",
-    icon = "__base__/graphics/entity/roboport/logistic-robotics.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "construction-drone"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "logistic-drone"
-      },
-    },
-	prerequisites = { "construction-robotics", "logistic-robotics", "advanced-robotics" },
-    unit =
-    {
-      count = 350,
-      ingredients =
-      {
-        {"science-pack-1", 1},
-        {"science-pack-2", 1},
-	     	{"science-pack-3", 1},
-	     	{"production-science-pack", 1}
-      },
-      time = 30
-    },
-    order = "c-k-d",
-  },
-
 }
 )

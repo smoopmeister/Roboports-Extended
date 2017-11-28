@@ -8,10 +8,6 @@ require("prototypes.roboports.roboport-mk4")
 require("prototypes.roboports.roboport-mk4-charging")
 require("prototypes.roboports.roboport-mk4-repair-storage")
 
---Drones
-require("prototypes.robots.contruction-drone")
-require("prototypes.robots.logistic-drones")
-
 --Other Prototypes
 require("prototypes.items")
 require("prototypes.recipes")
