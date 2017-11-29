@@ -64,5 +64,30 @@ data:extend
   },
 
 
+  {
+    --roboport-mk4
+      type = "item",
+      name = "roboport-mk4",
+      icon = "__base__/graphics/icons/roboport.png",
+      flags = {"goes-to-quickbar"},
+      subgroup = "logistic-network",
+      order = "c[signal]-b[roboport]3",
+      place_result = "roboport-mk4",
+      stack_size = 5
+    },
+
+    {
+      --roboport-mk4-charging
+        type = "item",
+        name = "roboport-mk4-charging",
+        icon = "__base__/graphics/icons/roboport.png",
+        flags = {"goes-to-quickbar"},
+        subgroup = "logistic-network",
+        order = "c[signal]-b[roboport]3",
+        place_result = "roboport-mk4-charging",
+        stack_size = 5
+      },
+    
+      
 }
 )

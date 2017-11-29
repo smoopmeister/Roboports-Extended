@@ -5,10 +5,10 @@ data:extend
   
   {
     type = "roboport",
-    name = "roboport-mk4",
+    name = "roboport-mk4-charging",
     icon = "__base__/graphics/icons/roboport.png",
     flags = {"placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 2, result = "roboport-mk4"},
+    minable = {hardness = 0.2, mining_time = 2, result = "roboport-mk4-charging"},
     max_health = 750,
     corpse = "big-remnants",
     collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
