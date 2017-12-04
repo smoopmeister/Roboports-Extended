@@ -38,7 +38,7 @@ data:extend
     {
       {
         type = "unlock-recipe",
-        recipe = "roboport-mk3-logistic"
+        recipe = "roboport-mk3"
       },
     },
 	prerequisites = { "expanded-robotics" },
