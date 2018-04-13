@@ -7,6 +7,7 @@ data:extend
     type = "roboport",
     name = "roboport-mk3-construction",
     icon = "__base__/graphics/icons/roboport.png",
+    icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 1, result = "roboport-mk3-construction"},
     max_health = 750,
@@ -48,10 +49,37 @@ data:extend
     },
     base =
     {
-      filename = "__base__/graphics/entity/roboport/roboport-base.png",
-      width = 143,
-      height = 135,
-      shift = {0.5, 0.25}
+      layers =
+      {
+        {
+          filename = "__base__/graphics/entity/roboport/roboport-base.png",
+          width = 143,
+          height = 135,
+          shift = {0.5, 0.25},
+          hr_version = {
+            filename = "__base__/graphics/entity/roboport/hr-roboport-base.png",
+            width = 228,
+            height = 277,
+            shift = util.by_pixel(2, 7.75),
+            scale = 0.5
+          }
+        },
+        {
+          filename = "__base__/graphics/entity/roboport/roboport-shadow.png",
+          width = 147,
+          height = 102,
+          draw_as_shadow = true,
+          shift = util.by_pixel(28.5, 19.25),
+          hr_version = {
+            filename = "__base__/graphics/entity/roboport/hr-roboport-shadow.png",
+            width = 294,
+            height = 201,
+            draw_as_shadow = true,
+            shift = util.by_pixel(28.5, 19.25),
+            scale = 0.5
+          }
+        }
+      }
     },
     base_patch =
     {
@@ -60,7 +88,16 @@ data:extend
       width = 69,
       height = 50,
       frame_count = 1,
-      shift = {0.03125, 0.203125}
+      shift = {0.03125, 0.203125},
+      hr_version = {
+        filename = "__base__/graphics/entity/roboport/hr-roboport-base-patch.png",
+        priority = "medium",
+        width = 138,
+        height = 100,
+        frame_count = 1,
+        shift = util.by_pixel(1.5, 5),
+        scale = 0.5
+      }
     },
     base_animation =
     {
@@ -70,7 +107,17 @@ data:extend
       height = 31,
       frame_count = 8,
       animation_speed = 0.5,
-      shift = {-0.5315, -1.9375}
+      shift = {-0.5315, -1.9375},
+      hr_version = {
+        filename = "__base__/graphics/entity/roboport/hr-roboport-base-animation.png",
+        priority = "medium",
+        width = 83,
+        height = 59,
+        frame_count = 8,
+        animation_speed = 0.5,
+        shift = util.by_pixel(-17.75, -61.25),
+        scale = 0.5
+      }
     },
     door_animation_up =
     {
@@ -79,7 +126,16 @@ data:extend
       width = 52,
       height = 20,
       frame_count = 16,
-      shift = {0.015625, -0.890625}
+      shift = {0.015625, -0.890625},
+      hr_version = {
+        filename = "__base__/graphics/entity/roboport/hr-roboport-door-up.png",
+        priority = "medium",
+        width = 97,
+        height = 38,
+        frame_count = 16,
+        shift = util.by_pixel(-0.25, -29.5),
+        scale = 0.5
+      }
     },
     door_animation_down =
     {
@@ -88,7 +144,16 @@ data:extend
       width = 52,
       height = 22,
       frame_count = 16,
-      shift = {0.015625, -0.234375}
+      shift = {0.015625, -0.234375},
+      hr_version = {
+        filename = "__base__/graphics/entity/roboport/hr-roboport-door-down.png",
+        priority = "medium",
+        width = 97,
+        height = 41,
+        frame_count = 16,
+        shift = util.by_pixel(-0.25,-9.75),
+        scale = 0.5
+      }
     },
     recharging_animation =
     {
@@ -129,21 +194,11 @@ data:extend
         sound = { filename = "__base__/sound/roboport-door.ogg", volume = 0.75 }
       },
     },
-    circuit_wire_connection_point =
-    {
-      shadow =
-      {
-        red = {1.17188, 1.98438},
-        green = {1.04688, 2.04688}
-      },
-      wire =
-      {
-        red = {0.78125, 1.375},
-        green = {0.78125, 1.53125}
-      }
-    },
-    circuit_connector_sprites = get_circuit_connector_sprites({0.59375, 1.3125}, nil, 18),
-    circuit_wire_max_distance = 9,
+
+    circuit_wire_connection_point = circuit_connector_definitions["roboport"].points,
+    circuit_connector_sprites = circuit_connector_definitions["roboport"].sprites,
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
+
     default_available_logistic_output_signal = {type = "virtual", name = "signal-X"},
     default_total_logistic_output_signal = {type = "virtual", name = "signal-Y"},
     default_available_construction_output_signal = {type = "virtual", name = "signal-Z"},
