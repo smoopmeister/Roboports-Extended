@@ -5,10 +5,10 @@ data:extend
   
   {
     type = "roboport",
-    name = "roboport-mk4-charging",
+    name = "roboport-mk4-bay",
     icon = "__base__/graphics/icons/roboport.png",
     flags = {"placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 3, result = "roboport-mk4-charging"},
+    minable = {hardness = 0.2, mining_time = 4, result = "roboport-mk4-bay"},
     max_health = 750,
     corpse = "big-remnants",
     collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
@@ -30,21 +30,21 @@ data:extend
       type = "electric",
       usage_priority = "secondary-input",
       input_flow_limit = "50MW",
-      buffer_capacity = "600MJ"
+      buffer_capacity = "300MJ"
     },
     recharge_minimum = "100MJ",
-    energy_usage = "200kW",
+    energy_usage = "150kW",
     -- per one charge slot
-    charging_energy = "3500kW",
+    charging_energy = "1500kW",
     logistics_radius = 50,
     construction_radius = 50,
     charge_approach_distance = 5,
-    robot_slots_count = 10,
-    material_slots_count = 1,
+    robot_slots_count = 30,
+    material_slots_count = 5,
     stationing_offset = {0, 0},
     charging_offsets =
     {
-      {-1.3, -0.5}, {1.3, -0.5}, {1.3, 1.5}, {-1.3, 1.5}, {-1.5, -0.5}, {1.5, -0.5}, {1.5, 1.5}, {-1.5, 1.5},
+      {-1.5, -0.5}, {1.5, -0.5}, {1.5, 1.5}, {-1.5, 1.5},
     },
     base =
     {

@@ -8,7 +8,7 @@ data:extend
     name = "roboport-mk4",
     icon = "__base__/graphics/icons/roboport.png",
     flags = {"placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 2, result = "roboport-mk4"},
+    minable = {hardness = 0.2, mining_time = 3, result = "roboport-mk4"},
     max_health = 750,
     corpse = "big-remnants",
     collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
@@ -35,7 +35,7 @@ data:extend
     recharge_minimum = "100MJ",
     energy_usage = "175kW",
     -- per one charge slot
-    charging_energy = "1500kW",
+    charging_energy = "2000kW",
     logistics_radius = 100,
     construction_radius = 200,
     charge_approach_distance = 5,
